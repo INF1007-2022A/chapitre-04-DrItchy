@@ -10,8 +10,10 @@ def is_even_len(string: str) -> bool:
         return False
 
 def remove_third_char(string: str) -> str:
-    return string[0:1]+string[3:]
-
+    if len(string)>=3:
+        return string[0:1]+string[3:]
+    else:
+        return string
 
 def replace_char(string: str, old_char: str, new_char: str) -> str:
     pass
