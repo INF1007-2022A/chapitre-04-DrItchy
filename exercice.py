@@ -26,10 +26,13 @@ def get_number_of_char(string: str, char: str) -> int:
             c+=1
     return c
 
-
 def get_number_of_words(sentence: str, word: str) -> int:
-    pass
-
+    s=sentence.split(' ')
+    c=0
+    for i in s:
+        if i==word:
+            c+=1
+    return c
 
 def main() -> None:
     chaine = "Bonjour!"
